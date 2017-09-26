@@ -1,0 +1,9 @@
+<div class="form-group row">
+                        <label class="col-md-3 label-control" for={{label}}>{{label}}<span ng-show="requiredValue" class="danger"> *</span></label>
+                        <div class="col-md-9" ng-class="validationDiv()">
+                            <textarea maxlength="maxLength" id={{nameArea}} name={{nameArea}} class="form-control" placeholder={{placeholder}} ng-class="validationInput()" required={{requiredValue}} ng-model="model"></textarea>
+                            <p class="text-xs-right">
+                                <small ng-show="validation()" class="danger text-muted">{{message}}</small>
+                            </p>
+                        </div>
+                    </div>

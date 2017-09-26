@@ -1,0 +1,37 @@
+{
+	"app":"app/",
+	"source": {
+		"path"         : "src",
+		"js"           : "app/src/js",
+		"sass"         : "app/scss",
+		"html"		   : "app/view",
+		"fonts"		   : "app/assets/theme/fonts",
+		"image"	   : "app/assets/image/*"
+	},
+	"clean":{
+		"js": "dist/js",
+		"css": "dis/css"
+	},
+	"compile":{
+		"sass": "./app/css"
+	},
+	"dist": {
+		"origin": "dist",
+		"js"           : "dist/js",
+		"css"         : "dist/css",
+		"html"     : "dist/view",
+		"fonts"		   : "app/fonts",
+		"image"	   : "dist/image"
+	},
+	"autoprefixerBrowsers": [
+		"Android 2.3",
+		"Android >= 4",
+		"Chrome >= 25",
+		"Firefox >= 15",
+		"Explorer >= 9",
+		"iOS >= 6",
+		"Opera >= 12",
+		"Safari >= 6"
+	]
+}
+

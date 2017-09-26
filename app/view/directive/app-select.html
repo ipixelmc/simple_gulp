@@ -1,0 +1,9 @@
+<div class="form-group row">
+                        <label class="col-md-3 label-control" for={{label}}>{{label}}<span ng-show="requiredValue" class="danger"> *</span></label>
+                        <div class="col-md-9">
+                            <select name={{nameSelect}} id={{nameSelect}} class="form-control" required={{requiredValue}} ng-model="model">
+                            <option value="" disabled>--Elija una opcion--</option>    
+                            <option ng-repeat="option in listOptions" value="{{option}}">{{option.name}}</option>
+                            </select>
+                        </div>
+                    </div>

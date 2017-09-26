@@ -1,0 +1,11 @@
+<div class="form-group row">
+                        <label class="col-md-3 label-control" for={{label}}>{{label}}<span ng-show="requiredValue" class="danger"> *</span></label>
+                        <div class="col-md-9" ng-class="validationDiv()" >
+                            <input type="text" id={{nameInput}} name={{nameInput}} class="form-control" placeholder={{placeholder}} required={{requiredValue}} ng-pattern="regex" ng-model="model" ng-class="validationInput()">
+                            <p class="text-xs-right">
+                                <small ng-show="validation()" class="danger text-muted">{{message}}</small>
+                                <small ng-if="validRegex" ng-show="validationRegex()" class="danger text-muted">{{regexMessage}}</small>
+                                <small class="text-muted"> {{example}}</small>
+                            </p>
+                        </div>
+                    </div>
